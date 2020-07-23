@@ -788,8 +788,8 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  border: solid 1px red;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
