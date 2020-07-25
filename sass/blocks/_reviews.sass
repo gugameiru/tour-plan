@@ -1,0 +1,95 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $white
+      border-radius: 8px
+      margin: 45px auto 0
+      width: 730px
+      padding: 0 62px 30px
+      position: relative
+      &::before
+        content: ''
+        width: 70px
+        height: 47px
+        position: absolute
+        left: 64px
+        top: 13px
+        background-image: url(../img/quote-left.svg) 
+        background-repeat: no-repeat 
+      &::after
+        content: ''
+        width: 70px
+        height: 47px
+        position: absolute
+        right: 60px
+        bottom: 114px
+        background-image: url(../img/quote-right.svg) 
+        background-repeat: no-repeat 
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+    &__avatar
+      width: 90px
+      height: 90px
+      object-fit: cover
+      border-radius: 50%
+      margin-bottom: 9px
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin: 0 0 10px
+    &__date
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__rating
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+    &__text
+      margin: auto
+      max-width: 537px
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+    &__button
+      position: absolute
+      z-index: 2
+      top: 0
+      width: 30px
+      height: 30px
+      border: none
+      top: 50%
+      transform: translateY(-50%)
+      cursor: pointer
+      &--next
+        right: 0
+        background: url("../img/gray-arrow-next.svg") no-repeat center/10px
+      &--prev
+        left: 0
+        background: url("../img/gray-arrow-prev.svg") no-repeat center/10px
+
+    
+
+  
+
+
+
+
