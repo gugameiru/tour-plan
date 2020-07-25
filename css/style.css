@@ -1190,6 +1190,9 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1197,13 +1200,16 @@ template {
   .activities__card {
     margin-bottom: 20px;
   }
+  .activities__title {
+    margin-bottom: 57px;
+  }
   .card {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
   .card__image {
     width: 100%;
-    height: 100%;
+    height: 250px;
   }
 }
 
@@ -1330,8 +1336,14 @@ template {
     margin-bottom: 40px;
   }
   .activities {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 60px;
+  }
+  .activities__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
   }
   .card {
     -ms-flex-preferred-size: 100%;
