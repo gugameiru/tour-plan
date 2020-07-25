@@ -912,7 +912,7 @@ template {
   background-color: #ffffff;
   border-radius: 8px;
   margin: 45px auto 0;
-  width: 730px;
+  max-width: 730px;
   padding: 0 62px 30px;
   position: relative;
 }
@@ -1023,10 +1023,10 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
-  .swiper-slide__image {
+  .hotel-slider__image {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1072,17 +1072,24 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
+  .hotel-slider__image {
+    width: 100%;
+  }
   .booking {
     width: 48%;
-  }
-  .slider {
-    width: 100%;
   }
   .map {
     width: 48%;
   }
-  .swiper-slide__image {
-    width: 100%;
+  .reviews-slider__item {
+    max-width: 580px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
@@ -1152,15 +1159,15 @@ template {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .slider {
-    height: 350px;
-    margin-bottom: 20px;
-  }
   .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .hotel-slider {
+    height: 350px;
+    margin-bottom: 20px;
   }
   .booking {
     width: 100%;
@@ -1187,16 +1194,37 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    left: 25%;
+  }
+  .reviews-slider__button--next {
+    right: 25%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .hotel {
-    padding-bottom: 40px;
+  .hotel__slider {
+    margin-bottom: 20px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
   .newsletter-title {
