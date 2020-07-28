@@ -110,7 +110,7 @@
     width: 92%
   .navbar
     &--mobile
-      &_fixed
+      &--fixed
         position: fixed
         left: 0
         top: 0
@@ -118,9 +118,9 @@
         z-index: 8
     &__user, &__search
       &--mobile
-        &_hidden
+        &--hidden
           display: none
-        &_visible
+        &--visible
           display: flex
     &__user
       flex-direction: column   
@@ -140,7 +140,7 @@
       &__item
         margin-bottom: 20px
         &--mobile
-          &_visible
+          &--visible
             display: block
   .menu
     &-button
