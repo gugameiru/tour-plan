@@ -1680,6 +1680,16 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .footer__bottom-block {
     -ms-grid-row: 8;
     grid-row: 8;
