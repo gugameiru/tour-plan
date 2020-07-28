@@ -103,12 +103,45 @@
         grid-row: 5 
         justify-self: start
 @media (max-width: 768px)
+  body
+    padding-top: 100px
   .container, .newsletter-wrapper
     max-width: 576px
     width: 92%
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 8
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column   
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      top: 78px
+      bottom: 0
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu    
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -125,6 +158,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--white
+        color: $white
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
   .hotel
@@ -200,6 +239,9 @@
 @media (max-width: 576px)
   .logo
     width: 99px
+  .search
+    &__input
+      width: 250px
   .hotel
     &__slider
       margin-bottom: 20px
