@@ -1644,11 +1644,18 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__title--inline {
+    margin: 0 0 16px 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__social-network {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__additional {
     -ms-grid-row: 3;
