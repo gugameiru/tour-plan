@@ -12,7 +12,7 @@ $email=$_POST['email'];
 
 if (($name=='') and ($phone=='') and ($message=='')) {
     // Формирование подписки на новости
-    $title = "BestTourPlan - gодписка на новости";
+    $title = "BestTourPlan - подписка на новости";
     $body = "
     <h2>Новая подписка на новости</h2>
     <b>e-mail:</b> $email<br>";
@@ -40,7 +40,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'dmitriiwebstart@gmail.com'; // Логин на почте
-    $mail->Password   = '~mn~kj8k'; // Пароль на почте
+    $mail->Password   = '******'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('dmitriiwebstart@gmail.com', 'Дмитрий Коротов'); // Адрес самой почты и имя отправителя
