@@ -45,7 +45,7 @@ $(document).ready(function () {
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
-    $(targetModal).find(".modal__dialog").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
 
   function closeModal(e) {
@@ -55,4 +55,11 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  document.addEventListener("keydown", function (e) {
+    var someKeyCode = e.keyCode;
+    if (someKeyCode == 27) {
+      closeModal(e);
+    }
+  });
 });
