@@ -62,4 +62,29 @@ $(document).ready(function () {
       closeModal(e);
     }
   });
+
+  // Обработка формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Name required",
+          minlength: "Name must be longer than 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone number required",
+        },
+      },
+    });
+  });
+
+  // Маска для телефонов
+  $(document).ready(function () {
+    $(".phone").mask("+7(000)000-00-00");
+  });
 });
