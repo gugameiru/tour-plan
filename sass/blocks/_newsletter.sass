@@ -36,11 +36,11 @@
       text-transform: uppercase
 .subscribe
   display: flex
-  position: relative
-  overflow: hidden
-  border-radius: 4px
+  position: relative  
   height: 55px
+  flex-wrap: wrap
   &__input
+    border-radius: 4px
     width: 350px
     padding-left: 23px
     padding-right: 70px
@@ -50,6 +50,12 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+    height: 55px
+  & label
+    position: absolute
+    border: none
+    top: 65px
+    left: 0
   &__button
     position: absolute
     border: none
@@ -62,6 +68,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    border-radius: 0 4px 4px 0
     cursor: pointer
 
 

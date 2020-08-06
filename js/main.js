@@ -68,7 +68,6 @@ $(document).ready(function () {
 
   // Обработка формы
   $(".form").each(function () {
-    console.log("kuku");
     $(this).validate({
       errorClass: "invalid",
       messages: {
