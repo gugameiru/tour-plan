@@ -892,8 +892,6 @@ template {
   display: flex;
   position: relative;
   height: 55px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .subscribe__input {
@@ -912,7 +910,6 @@ template {
 
 .subscribe label {
   position: absolute;
-  border: none;
   top: 65px;
   left: 0;
 }

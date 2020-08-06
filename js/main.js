@@ -70,6 +70,16 @@ $(document).ready(function () {
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 5,
+        },
+        phone: {
+          required: true,
+          minlength: 16,
+        },
+      },
       messages: {
         name: {
           required: "Name required",
@@ -81,13 +91,14 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone number required",
+          minlength: "Phone number must be 10 digits",
         },
       },
     });
   });
-
+  $(".phone").mask("+7(000)000-00-00");
   // Маска для телефонов
-  $(document).ready(function () {
-    $(".phone").mask("+7(000)000-00-00");
-  });
+  // $(document).ready(function () {
+  //   $(".phone").mask("+7(000)000-00-00");
+  // });
 });
