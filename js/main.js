@@ -42,6 +42,9 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
 
+  var closeModalMask = $(".modal__overlay");
+  closeModalMask.on("click", closeModal);
+
   function openModal() {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
@@ -65,6 +68,7 @@ $(document).ready(function () {
 
   // Обработка формы
   $(".form").each(function () {
+    console.log("kuku");
     $(this).validate({
       errorClass: "invalid",
       messages: {
