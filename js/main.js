@@ -96,9 +96,8 @@ $(document).ready(function () {
       },
     });
   });
-  $(".phone").mask("+7(000)000-00-00");
   // Маска для телефонов
-  // $(document).ready(function () {
-  //   $(".phone").mask("+7(000)000-00-00");
-  // });
+  $(".phone").mask("+7(000)000-00-00");
+  // Анимация
+  AOS.init();
 });
