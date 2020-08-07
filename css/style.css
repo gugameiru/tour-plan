@@ -1288,6 +1288,11 @@ template {
   margin-bottom: 22px;
 }
 
+.footer__phone, .footer__email {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__input {
   width: 100%;
 }

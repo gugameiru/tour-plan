@@ -386,11 +386,7 @@
         <h2 class="reviews__title" data-aos="fade-up">
           What people thinks about us
         </h2>
-        <div
-          class="swiper-container reviews-slider"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div class="swiper-container reviews-slider" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -840,7 +836,6 @@ quest"
                     class="footer__icon"
                     src="img/location-on.svg"
                     alt="icon: location"
-                    srcset=""
                   />
                 </div>
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
@@ -852,13 +847,22 @@ quest"
                     class="footer__icon"
                     src="img/phone-call-2.svg"
                     alt="icon: phone"
-                    srcset=""
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00
-                pm)
+                <div class="footer__content-wrapper">
+                  Tel (business hours) :
+                  <a href="tel:269 1500" class="footer__phone">269 1500</a>
+                  <br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52-56-61-38" class="footer__phone"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
+                  <a href="tel:52-56-61-38" class="footer__phone"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -866,10 +870,11 @@ quest"
                     class="footer__icon"
                     src="img/email.svg"
                     alt="icon: email"
-                    srcset=""
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__email"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
