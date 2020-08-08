@@ -1338,15 +1338,16 @@ template {
   min-height: 50px;
 }
 
-.footer__bottom-block {
+.footer__bottom-wrapper {
   -ms-grid-row: 6;
   grid-row: 6;
   grid-column: span 5;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: self-end;
-      -ms-grid-row-align: self-end;
-      align-self: self-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer__bottom-item {
@@ -1355,6 +1356,20 @@ template {
   line-height: 15px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.footer__bottom-block {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-top: 15px;
+  padding-left: 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer__bottom-images {
+  margin-right: 90px;
+  margin-top: 15px;
 }
 
 .footer__phone, .footer__email {
