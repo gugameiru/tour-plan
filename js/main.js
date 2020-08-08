@@ -99,7 +99,16 @@ $(document).ready(function () {
   // Маска для телефонов
   $(".phone").mask("+7(000)000-00-00");
   // Анимация
-  AOS.init();
+  function removeAos() {
+    var elem = document.getElementById("aos-css-file");
+    elem.parentNode.removeChild(elem);
+    return false;
+  }
+  if (window.innerWidth < 576) {
+    removeAos();
+  }
+
+  AOS.init({ disable: "phone" });
   $("form").find("input").val("");
   $("form").find("textarea").val("");
 });

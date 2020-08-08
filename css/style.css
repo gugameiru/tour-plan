@@ -1787,6 +1787,18 @@ template {
     -ms-grid-row: 5;
     grid-row: 5;
   }
+  .modal__dialog {
+    max-width: 100%;
+  }
+  .modal__dialog--mobile--fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 78px;
+    bottom: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 
 @media (max-width: 576px) {
@@ -1887,6 +1899,20 @@ template {
     grid-column: 1;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
