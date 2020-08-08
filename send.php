@@ -40,13 +40,13 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'dmitriiwebstart@gmail.com'; // Логин на почте
-    $mail->Password   = '******'; // Пароль на почте
+    $mail->Password   = '~mn~kj8k'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('dmitriiwebstart@gmail.com', 'Дмитрий Коротов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('gugameiru@gmail.com');  
+    $mail->addAddress('ivptrvtv@yandex.ru');  
     
     // Отправка сообщения
     $mail->isHTML(true);
