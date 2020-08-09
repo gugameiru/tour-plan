@@ -7,6 +7,7 @@
     padding: 40px 0
     &__menu-button
       display: none
+      outline-width: 0
   &__search
     margin-right: auto
     margin-left: 108px 
@@ -26,12 +27,16 @@
       font-weight: bold
       font-size: 14px
       line-height: 18px
+      &:hover
+        box-shadow: 0 0 4px $hover-color
     &__item
       &--mobile
         &--visible
           display: none
 .logo
   width: 177px
+  // &:hover
+  //     box-shadow: 0 0 4px $hover-colo
 .search
   display: flex
   position: relative
@@ -58,10 +63,14 @@
     background: $primary
     outline-width: 0
     cursor: pointer
+    &:hover
+      box-shadow: inset 0 0 4px $hover-color
 .user
   display: flex
   align-items: center
   text-decoration: none
+  &:hover
+      box-shadow: 0 0 4px $hover-color
   &__avatar
     width: 40px
     height: 40px

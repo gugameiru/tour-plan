@@ -46,6 +46,11 @@
     width: 92%
   .logo
     width: 132px
+    &:hover
+        box-shadow: none
+  .modal
+    &__dialog
+      padding: 33px 44px
   .navbar
     &-top
       padding: 30px 0
@@ -56,9 +61,23 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:hover
+          box-shadow: none
   .search
     &__input
        width: 340px
+    &__button
+        &:hover
+          box-shadow: none
+  .user
+    &:hover
+      box-shadow: none
+  .breadcrumb
+    &-list
+      &__link
+        &:hover
+          box-shadow: none
+
   .hotel
     &-grid
       flex-direction: column
@@ -70,14 +89,27 @@
       width: 100%
       &__image
         width: 100%
+      &__button
+        &:hover
+          box-shadow: none
   .booking
     width: 48%
+    &__button
+      &:hover
+        box-shadow: none
   .map
     width: 48%
+  .subscribe
+    &__button
+      &:hover
+        box-shadow: none
   .reviews
     &-slider
       &__item
         max-width: 580px 
+      &__button
+        &:hover
+          box-shadow: none
     &__title
       font-size: 30px
       line-height: 38px
@@ -94,10 +126,19 @@
     &__image
       width: 100%
       height: 250px
+    &__button
+      &:hover
+        box-shadow: none
   .footer
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-gap: 40px
+    &-link
+      &:hover
+        box-shadow: none
+    &__link
+      &:hover
+        box-shadow: none
     &__input
       &-group
         flex-basis: 48%
@@ -123,6 +164,9 @@
       &-form
         grid-row: 4
         grid-column: span 5
+    &__phone, &__email
+      &:hover
+        box-shadow: none
     &__bottom
       &-wrapper
         width: 100%
@@ -130,10 +174,16 @@
         grid-column: span 6
       &-block
         padding-left: 0
+      &-item
+        &:hover
+          box-shadow: none
       &-images
         object-fit: cover
         height: 22px
         width: 136px
+    &__button
+      &:hover
+        box-shadow: none
             
 @media (max-width: 768px)
   body
@@ -163,7 +213,7 @@
       position: fixed
       left: 0
       right: 0
-      top: 78px
+      top: 70px
       bottom: 0
       padding-top: 30px
       max-height: 100vh
@@ -218,7 +268,6 @@
       &__name
         margin-top: 10px
         margin-bottom: 0
-  .hotel
     &-right
       flex-direction: column
     &-slider
@@ -230,6 +279,8 @@
       margin-bottom: 20px
   .map
     width: 100%
+    &__preloader>img
+      width: 100%
   .newsletter
     &__title
       padding: 76px 0 83px 0
@@ -288,6 +339,9 @@
         max-height: 100vh
         overflow-y: auto
         transform: translate(-50%, -50%)
+  .modal
+    &__info
+      margin-top: 10px
 @media (max-width: 576px)
   body
     padding-top: 58px
@@ -353,7 +407,6 @@
         &--next
           right: 12%
   .activities
-    overflow: hidden
     padding-bottom: 40px
     &__title
       margin-top: -38px

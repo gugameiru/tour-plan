@@ -3,7 +3,6 @@
   color: $white
   padding: 108px 0 46px
   &-wrapper
-    
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 2fr))
     grid-gap: 20px
@@ -28,6 +27,9 @@
       display: flex
       min-width: 83px
       justify-content: space-between
+  &-link
+    &:hover
+        box-shadow: 0 0 4px $hover-color
   &__additional
     // margin-left: -30px
   &__contact
@@ -75,6 +77,8 @@
   &__link
     text-decoration: none
     color: inherit
+    &:hover
+        box-shadow: 0 0 4px $hover-color
   &__icon
     &-wrapper
       min-width: 40px
@@ -97,6 +101,8 @@
     color: $footer-info-color
   &__button
     min-height: 50px
+    &:hover
+        box-shadow: 0 0 4px $hover-color
   &__bottom
     &-wrapper
       grid-row: 6
@@ -109,6 +115,8 @@
       line-height: 15px
       text-decoration: none
       color: $white
+      &:hover
+        box-shadow: 0 0 4px $hover-color
     &-block
       flex-basis: 50%
       margin-top: 15px
@@ -119,6 +127,8 @@
   &__phone, &__email
     color: inherit
     text-decoration: none
+    &:hover
+        box-shadow: 0 0 4px $hover-color
 
 
 
