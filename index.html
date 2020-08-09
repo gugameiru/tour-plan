@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link id="aos-css-file" rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile--fixed">
@@ -35,7 +35,7 @@
           >
             <input
               type="text"
-              class="search__input"
+              class="input search__input"
               placeholder="Search Location"
             />
             <button class="search__button">
@@ -212,7 +212,8 @@
           <!-- /.hotel-info__text -->
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Ratings</span>
-            <span class="rating__counter">4.5/5</span>
+            <span class="rating__counter">4.5/</span
+            ><span class="rating__counter--small">5</span>
           </div>
           <!-- /.hotel-info__right -->
         </div>
@@ -369,12 +370,12 @@
         >
           <input
             type="email"
-            class="subscribe__input"
+            class="input subscribe__input"
             placeholder="Your email address"
             name="email"
             required
           />
-          <button type="submit" class="subscribe__button">Send</button>
+          <button type="submit" class="button subscribe__button">Send</button>
         </form>
         <!-- /.newsletter-title -->
       </div>
@@ -853,7 +854,7 @@ quest"
                 </div>
                 <div class="footer__content-wrapper">
                   Tel (business hours) :
-                  <a href="tel:269 1500" class="footer__phone">269 1500</a>
+                  <a href="tel:269-1500" class="footer__phone">269 1500</a>
                   <br />
                   Tel (hotline) Monday - Saturday:
                   <a href="tel:52-56-61-38" class="footer__phone"

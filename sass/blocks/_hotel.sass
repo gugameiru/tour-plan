@@ -47,6 +47,7 @@
       top: 50%
       transform: translateY(-50%)
       cursor: pointer
+      outline-width: 0
       &--next
         right: 18px
         background: url("../img/arrow-next.svg") no-repeat center/10px
@@ -85,11 +86,17 @@
   background-color: $primary
   border-radius: 4px
   &__text
+    font-weight: 600
     font-size: 8px
     line-height: 10px
   &__counter
+    font-weight: bold
     font-size: 14px
     line-height: 18px
+    &--small
+      font-size: 10px
+      line-height: 18px
+      font-weight: bold
 .booking
   border-radius: 8px
   width: 350px
@@ -159,6 +166,8 @@
     font-size: 12px
     line-height: 12px
     cursor: pointer
+    &--thankyou
+      margin-top: 20px
 .map
   width: 347px
   height: 213px

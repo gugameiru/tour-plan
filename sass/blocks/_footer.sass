@@ -3,7 +3,7 @@
   color: $white
   padding: 108px 0 46px
   &-wrapper
-    width: 1200px
+    
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 2fr))
     grid-gap: 20px
@@ -17,19 +17,19 @@
     margin-top: 5px
   &__categories
     grid-row: 1 / 4
-    margin-left: -15px
+    // margin-left: -15px
   &__social    
     &-network
       grid-row: 2 / 4
       grid-column: span 2
       display: flex
-      margin-left: -30px
+      // margin-left: -30px
     &-links
       display: flex
       min-width: 83px
       justify-content: space-between
   &__additional
-    margin-left: -30px
+    // margin-left: -30px
   &__contact
     &-details
       grid-column: span 2
@@ -38,9 +38,10 @@
       margin-left: -5px
     &-form
       grid-column: span 2
-      margin-left: -30px
+      // margin-left: -30px
   &__legal
-    margin-left: 15px
+    justify-self: end
+    // margin-left: 15px
   &__form
     align-self: center
     display: flex
@@ -97,20 +98,9 @@
   &__button
     min-height: 50px
   &__bottom
-    // &-block
-    //   grid-row: 6
-    //   grid-column: span 5
-    //   justify-self: center
-    //   align-self: self-end
-    // &-item
-    //   font-weight: normal
-    //   font-size: 12px
-    //   line-height: 15px
-    //   text-decoration: none
-    //   color: $white
     &-wrapper
       grid-row: 6
-      grid-column: span 5
+      grid-column: span 4
       display: flex
       justify-content: flex-end
     &-item
@@ -122,10 +112,9 @@
     &-block
       flex-basis: 50%
       margin-top: 15px
-      padding-left: 40px
       align-self: flex-end
     &-images
-      margin-right: 90px
+      flex-basis: 136px
       margin-top: 15px
   &__phone, &__email
     color: inherit
